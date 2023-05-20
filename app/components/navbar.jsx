@@ -13,11 +13,11 @@ function navbar() {
                         <a href="#" className="text-black font-bold logo-div"></a>
 
                         <div className="flex">
-                            <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-medium menu-item">Home</a>
-                            <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-medium menu-item">Products</a>
-                            <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-medium flex flex-row menu-item items-start pages">Pages<span className='hover-arrow'><KeyboardArrowUpOutlinedIcon sx={{ marginBottom: '-2px' }} /></span></a>
-                            <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-medium menu-item">Contacts</a>
-                            <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-medium menu-item">Cart({cartCount})</a>
+                            <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item">Home</a>
+                            <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item">Products</a>
+                            <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium flex flex-row menu-item items-start pages">Pages<span className='hover-arrow'><KeyboardArrowUpOutlinedIcon sx={{ marginBottom: '-0.05em' }} /></span></a>
+                            <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item">Contacts</a>
+                            <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item">Cart({cartCount})</a>
                         </div>
                     </div>
                     <div className='flex flex-row gap-4'>
