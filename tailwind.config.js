@@ -12,6 +12,22 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      height: {
+        '450': '450px',
+      },
+      width: {
+        'wx': '30%',
+      },
+      aspectRatio: {
+        'ar': '3 / 3.5',
+      },
+      backgroundSize: {
+        'h1': '100% 100%',
+        'h2': '105% 105%',
+      },
+      padding: {
+        '10p': '10%',
+      }
     },
     fontSize: {
       sm: '0.8rem',
