@@ -3,25 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --primary-color: #5178ff;
+  --secondary-white: #fffdf9;
+  --secondary-blue: #005dff;
+  --secondary-purple: #5142fb;
+  --secondary-wheat: #ffd89d;
+  --secondary-yellow: #fdb52a;
+  --neutral800: #0c1830;
+  --neutral700: #2f3e59;
+  --neutral600: #46526a;
+  --neutral500: #7f8da3;
+  --neutral400: #7f8da3;
+  --neutral300: #ecf2ff;
+  --neutral200: #f8f8fb;
+  --neutral100: #ffffff;
+  --blue400: #086cd9;
+  --blue300: #1d88fe;
+  --blue200: #8fc3ff;
+  --blue100: #eaf3ff;
+  --green400: #11845a;
+  --green300: #05c168;
+  --green200: #7fdca4;
+  --green100: #def2e6;
+  --red400: #dc2b2b;
+  --red300: #ff5a65;
+  --red200: #ffbec2;
+  --red100: #ffeff0;
+  --orange400: #d5691b;
+  --orange300: #ff9e2c;
+  --orange200: #ffd19b;
+  --orange100: #fff3e4;
 }
