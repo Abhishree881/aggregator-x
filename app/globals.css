@@ -34,3 +34,21 @@
   --orange200: #ffd19b;
   --orange100: #fff3e4;
 }
+
+.bg-primary{
+  background-color: var(--primary-color);
+}
+.bg-secondary-blue{
+  background-color: var(--secondary-blue);
+}
+.hover-primary-bg:hover{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+.jump{
+  transition: 0.5s;
+}
+.jump:hover{
+  transform: translateY(-3px);
+}
