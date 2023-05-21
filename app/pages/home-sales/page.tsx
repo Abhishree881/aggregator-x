@@ -53,10 +53,10 @@ export default function HomePage() {
                     <Button type={'primary'} text={'Buy Template'} icon={0} />
                 </div>
             </div>
-            <div className='bg-primary-gray w-full h-fit flex flex-col py-24 items-center justify-center'>
+            <div className='bg-primary-gray w-full h-fit flex flex-col py-12 items-center justify-center'>
                 <div className='font-bold text-3xl mb-6'>Main Pages</div>
                 <div className='text-gray-400'>Take a look at the main pages included in the Aggregator X Template.</div>
-                <div className='max-w-[1275px] flex flex-row flex-wrap gap-8 px-8 my-16'>
+                <div className='max-w-[1275px] flex flex-row flex-wrap gap-8 pl-8 justify-between pr-8 my-16'>
                     {PageData.map((index) => {
                         return (
                             <Card2 text={index.title} url={sampleUrl} />
@@ -64,6 +64,22 @@ export default function HomePage() {
                     })}
                 </div>
                 <div className='flex gap-4 h-12'>
+                    <Button type={'primary'} text={'Buy Template'} icon={0} />
+                </div>
+            </div>
+
+            <div className='bg-white w-full h-fit flex flex-col py-12 items-center justify-center'>
+                <div className='font-bold text-3xl mb-6'>Utility Pages</div>
+                <div className='text-gray-400'>Take a look at the utility pages included in the Aggregator X Template.</div>
+            </div>
+            <div className='relative flex flex-col gap-4 w-full mb-12 items-center justify-center h-auto'>
+                <div className='w-full px-8 flex flex-col items-center justify-center max-w-[1275px]'>
+                    <div className='relative flex flex-row h-auto w-full items-center justify-center gap-8'>
+                        <Card text={'404 Not Found'} url={sampleUrl} />
+                        <Card text={'Password Protected'} url={sampleUrl} />
+                    </div>
+                </div>
+                <div className='flex gap-4 h-12 mt-12'>
                     <Button type={'primary'} text={'Buy Template'} icon={0} />
                 </div>
             </div>
