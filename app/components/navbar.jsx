@@ -10,7 +10,7 @@ function navbar() {
             <div className="max-w-7xl m-auto px-6">
                 <div className="flex items-center justify-between h-16">
                     <div className='flex items-center gap-12'>
-                        <a href="#" className="text-black font-bold logo-div"></a>
+                        <a href="#" className="text-black jump font-bold logo-div"></a>
 
                         <div className="flex">
                             <a href="#" className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item">Home</a>

@@ -6,6 +6,9 @@ import Card from '@/app/components/card1'
 
 export default function HomePage() {
     let sampleUrl = 'https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg'
+    let url2 = 'https://i.ibb.co/rvxpBpZ/temp.jpg'
+    let url3 = 'https://i.ibb.co/wpccQg1/figma.png'
+
     return (
         <div className='w-full'>
             <Navbar />
@@ -22,15 +25,23 @@ export default function HomePage() {
                 <div className='font-bold text-3xl'>What is included in Aggregator X</div>
                 <div className='font-medium text-sm text-gray-600 max-w-md text-center'><span className='font-bold text-gray-800'>Aggregator X Webflow </span>Template includes over <span className='font-bold text-gray-800'>20 pages</span> in total, with more than <span className='font-bold text-gray-800'>32 sections.</span></div>
 
-                <div className='w-full px-8 flex flex-col items-center justify-center max-w-[1200px]'>
+                <div className='w-full px-8 flex flex-col items-center justify-center max-w-[1275px]'>
                     <div className='relative flex flex-row h-auto w-full py-4 items-center justify-between gap-8'>
                         <Card number={'20+'} text={'Pages'} url={sampleUrl} />
                         <Card number={'32+'} text={'Sections'} url={sampleUrl} />
                         <Card number={'25+'} text={'Styles and Symbols'} url={sampleUrl} />
                     </div>
                     <div className='flex border w-full h-[500px] rounded-3xl flex-row overflow-hidden'>
-                        <div className='flex flex-1 flex-col h-full w-full'></div>
-                        <div className='flex flex-1 flex-col h-full w-full min-w-[600px] bg-gray-400'></div>
+                        <div className='flex flex-1 flex-col h-full w-full justify-center p-12 gap-2'>
+                            <div className='h-[50px] w-[40px] bg-center bg-h1 mb-4' style={{ backgroundImage: `url(${url3})` }}></div>
+                            <div className='font-bold text-xl'>Figma file included</div>
+                            <div className='text-gray-400'>Send us an email to <span className='text-black font-semibold'>aggregatorx@brixtemplates.com</span> with your purchase receipt, and we will send you the editable Figma file for the Aggregator X template.</div>
+                            <div className='w-[160px] h-[50px] flex items-center mt-4'>
+                                <Button type={'secondary'} text={'Request Figma file'} />
+                            </div>
+
+                        </div>
+                        <div className='flex flex-1 flex-col h-full w-full duration-500 min-w-[600px] bg-center bg-h1 hover:bg-h2 bg-gray-400' style={{ backgroundImage: `url(${url2})` }}></div>
                     </div>
                 </div>
 
