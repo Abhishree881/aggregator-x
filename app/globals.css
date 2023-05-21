@@ -52,3 +52,12 @@
 .jump:hover{
   transform: translateY(-3px);
 }
+.jump2{
+  transition: 0.5s;
+}
+.jump2:hover{
+  transform: translateY(-6px);
+}
+.bg-primary-gray{
+  background-color: var(--neutral200);
+}

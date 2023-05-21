@@ -3,6 +3,9 @@ import React from 'react'
 import Navbar from '../../components/navbar'
 import Button from '@/app/components/button'
 import Card from '@/app/components/card1'
+import Card2 from '@/app/components/card2'
+import PageData from './data'
+import '../../globals.css'
 
 export default function HomePage() {
     let sampleUrl = 'https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg'
@@ -36,16 +39,31 @@ export default function HomePage() {
                             <div className='h-[50px] w-[40px] bg-center bg-h1 mb-4' style={{ backgroundImage: `url(${url3})` }}></div>
                             <div className='font-bold text-xl'>Figma file included</div>
                             <div className='text-gray-400'>Send us an email to <span className='text-black font-semibold'>aggregatorx@brixtemplates.com</span> with your purchase receipt, and we will send you the editable Figma file for the Aggregator X template.</div>
-                            <div className='w-[160px] h-[50px] flex items-center mt-4'>
-                                <Button type={'secondary'} text={'Request Figma file'} />
+
+                            <div className='flex gap-4 h-12 mt-8'>
+                                <Button type={'secondary'} text={'Request Figma file'} icon={0} />
                             </div>
 
                         </div>
-                        <div className='flex flex-1 flex-col h-full w-full duration-500 min-w-[600px] bg-center bg-h1 hover:bg-h2 bg-gray-400' style={{ backgroundImage: `url(${url2})` }}></div>
+                        <div className='flex flex-1 flex-col h-full w-full duration-500 min-w-[600px] bg-center bg-h1 hover:bg-h2 bg-grey-primary' style={{ backgroundImage: `url(${url2})` }}></div>
                     </div>
                 </div>
 
                 <div className='flex gap-4 h-12 mt-8'>
+                    <Button type={'primary'} text={'Buy Template'} icon={0} />
+                </div>
+            </div>
+            <div className='bg-primary-gray w-full h-fit flex flex-col py-24 items-center justify-center'>
+                <div className='font-bold text-3xl mb-6'>Main Pages</div>
+                <div className='text-gray-400'>Take a look at the main pages included in the Aggregator X Template.</div>
+                <div className='max-w-[1275px] flex flex-row flex-wrap gap-8 px-8 my-16'>
+                    {PageData.map((index) => {
+                        return (
+                            <Card2 text={index.title} url={sampleUrl} />
+                        )
+                    })}
+                </div>
+                <div className='flex gap-4 h-12'>
                     <Button type={'primary'} text={'Buy Template'} icon={0} />
                 </div>
             </div>
