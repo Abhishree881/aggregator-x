@@ -5,6 +5,7 @@ import Button from '@/app/components/button'
 import Card from '@/app/components/card1'
 import Card2 from '@/app/components/card2'
 import PageData from './data'
+import PageData2 from './data2'
 import '../../globals.css'
 
 export default function HomePage() {
@@ -81,6 +82,29 @@ export default function HomePage() {
                 </div>
                 <div className='flex gap-4 h-12 mt-12'>
                     <Button type={'primary'} text={'Buy Template'} icon={0} />
+                </div>
+            </div>
+            <div className='relative bg-primary-gray flex flex-col gap-4 w-full py-12 items-center justify-center h-auto'>
+                <div className='w-full px-8 flex flex-col items-center justify-center max-w-[1275px]'>
+                    <div className='font-bold text-4xl text-center max-w-[750px]'>The Aggregator X Webflow Template also comes with more surprises...</div>
+                    <div className='relative flex flex-col w-full h-auto items-center justify-center gap-8'>
+                        {PageData2.map((index) => {
+                            return (
+                                <div className={index.index % 2 === 1 ? 'w-full h-auto justify-between flex flex-row my-16' : 'w-full h-auto m-auto flex flex-row-reverse my-16 gap-16 justify-between'}>
+                                    <div className='w-[40%] bg-primary-gray flex flex-col justify-center'>
+                                        <div className='font-bold text-2xl'>{index.heading}</div>
+                                        <div className='font-small text-gray-600 mt-4 max-w-[90%]'>{index.text}</div>
+                                        {index.pbutton ? <div className='flex gap-4 h-12 mt-10'>
+                                            <Button type={'primary'} text={index.pbutton} icon={0} />
+                                            {index.sbutton ? <Button type={'secondary'} text={index.sbutton} icon={0} /> : <></>}
+                                        </div> : <></>}
+
+                                    </div>
+                                    <div className='w-[52.5%] max-w-[700px] aspect-[1.1] bg-gray-400 rounded-3xl bg-center bg-h1' style={{ backgroundImage: `url(${index.img})` }}></div>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
