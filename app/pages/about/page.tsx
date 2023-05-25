@@ -94,7 +94,7 @@ function About() {
     return (
         <div className='w-full flex flex-col h-full items-center justify-center'>
             <div className='w-full max-w-[1250px] px-8'>
-                {/* <Navbar /> */}
+                <Navbar />
             </div>
             <div className='w-full h-[425px] my-8 flex felx-row max-w-[1250px] gap-16 px-8 overflow-hidden col-1050 about-box'>
                 <div className='w-full h-full flex-[2] flex flex-col justify-center'>

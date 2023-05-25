@@ -29,7 +29,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    transition: height 1s;
+    transition: height 0.6s ease;
+    overflow: hidden;
   }
   .faq-expand.active{
     height: 200px;
