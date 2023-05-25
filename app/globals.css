@@ -61,3 +61,10 @@
 .bg-primary-gray{
   background-color: var(--neutral200);
 }
+
+@media (max-width: 1050px) {
+  .col-1050{
+    flex-direction: column;
+  }
+  
+}

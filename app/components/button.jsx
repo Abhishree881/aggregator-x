@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../app/globals.css'
 import StarIcon from '@mui/icons-material/Star';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Button(props) {
     return (

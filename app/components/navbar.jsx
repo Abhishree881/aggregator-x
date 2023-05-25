@@ -7,7 +7,7 @@ function navbar() {
     const [cartCount, setCartCount] = useState(0)
     return (
         <nav className="bg-white my-8">
-            <div className="max-w-7xl m-auto px-6">
+            <div className="max-w-7xl m-auto">
                 <div className="flex items-center justify-between h-16">
                     <div className='flex items-center gap-12'>
                         <a href="#" className="text-black jump font-bold logo-div"></a>

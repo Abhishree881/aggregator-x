@@ -24,6 +24,7 @@ module.exports = {
       backgroundSize: {
         'h1': '100% 100%',
         'h2': '105% 105%',
+        's1': '70% 70%',
       },
       padding: {
         '10p': '10%',
