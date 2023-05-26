@@ -46,6 +46,16 @@
   color: white;
   border: none;
 }
+.hover-secondary-bg{
+  background-color: var(--blue100);
+  border: 1px solid var(--blue100);
+  color: var(--primary-color);
+}
+.hover-secondary-bg:hover{
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  
+}
 .jump{
   transition: 0.5s;
 }
