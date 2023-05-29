@@ -5,7 +5,7 @@ import Button2 from '@/app/components/button2'
 import '../../styles/about.css'
 import '../../../app/globals.css'
 
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 const sponsorData = [
     {
         title: 'Google',
@@ -78,6 +78,9 @@ const faq = [
 
 
 function About() {
+    useEffect(() => {
+        document.title = 'About - Aggregator X';
+    }, []);
     const [active, setActive] = useState<number[]>([]);
     function Checker(x: number): boolean {
         if (active.includes(x))

@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 import Navbar from '../../components/navbar'
+import Footer from "@/app/components/Footer";
 import Landingpage from '../../components/home-components/landingpage'
 
 export default function HomePage() {
@@ -10,7 +11,8 @@ export default function HomePage() {
     return (
         <div className='home-div'>
             <Navbar />
-            <Landingpage/>
+            {/*<Landingpage/>*/}
+            <Footer/>
         </div>
     )
 }

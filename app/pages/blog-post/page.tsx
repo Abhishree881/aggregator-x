@@ -3,8 +3,12 @@ import Navbar from '../../components/navbar'
 import '../../styles/blog.css'
 import '../../../app/globals.css'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import {useEffect} from "react";
 
 export default function BlogPost() {
+    useEffect(() => {
+        document.title = 'Blog-Post - Aggregator X';
+    }, []);
     return (
         <div className='w-full flex flex-col h-full items-center justify-center'>
             <div className='w-full max-w-[1250px] px-8'>
