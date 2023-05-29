@@ -11,7 +11,7 @@ export default function HomePage() {
     return (
         <div className='home-div'>
             <Navbar />
-            {/*<Landingpage/>*/}
+            <Landingpage/>
             <Footer/>
         </div>
     )

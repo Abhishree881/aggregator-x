@@ -3,6 +3,7 @@
 .footer{
     max-width: 1250px;
     margin: auto;
+    margin-top: 70px;
 }
 .bgDark {
     color: #46526A;
