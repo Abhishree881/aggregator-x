@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../../components/navbar'
 import Button from '@/app/components/button'
 import Card from '@/app/components/card1'
@@ -12,6 +12,10 @@ export default function HomePage() {
     let sampleUrl = 'https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg'
     let url2 = 'https://i.ibb.co/rvxpBpZ/temp.jpg'
     let url3 = 'https://i.ibb.co/wpccQg1/figma.png'
+
+    useEffect(() => {
+        document.title = 'Home-Sales - Aggregator X';
+    }, []);
 
     return (
         <div className='w-full'>

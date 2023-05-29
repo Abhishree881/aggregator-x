@@ -1,0 +1,155 @@
+@import '../globals.css';
+
+.footer{
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 70px;
+}
+.bgDark {
+    color: #46526A;
+    font-weight: 500;
+    padding: 1vh 15px 2vh 15px;
+    /*width: 100%;*/
+}
+
+.footer-logo-block {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.footer-logo-block h6{
+    font-size: 11px;
+    font-weight: 800;
+}
+.footer-logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-clg-name h4 {
+    font-weight: 400;
+    color: #717A8C;
+    margin-top: 2vh;
+}
+
+.footer-social {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    background-color: #ECF2FF;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0px 10px 0 0;
+    color: #5178FF;
+}
+
+.list-unstyled {
+    list-style: none;
+    width: 100%;
+    margin-left: 4vw;
+    /*margin-right: 4vw;*/
+}
+
+.list-unstyled li{
+    padding: 3px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-white-footer {
+    text-decoration: none;
+    color: #717A8C;
+    /* margin: 5px; */
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+}
+
+.text-white-footer:hover {
+    color: skyblue;
+}
+
+.text-white-footer:hover+hr {
+    border: 0.1px solid skyblue;
+    opacity: 1;
+}
+
+hr {
+    margin: 5px 0 5px 0 ;
+    width: 100%;
+    border-top: 0.1px solid #403E3D;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+}
+
+.footer-copyright {
+    margin-top: 15vh;
+    background-color: #191919;
+}
+.footer-copyright hr{
+    margin-bottom: 2vh;
+}
+@media (max-width: 1250px) {
+    .bgDark{
+        padding: 1vh 3vw 2vh 3vw;
+    }
+}
+@media (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .list-head{
+        margin-top: 30px;
+    }
+
+    .footer-logo-block {
+        width: auto;
+        margin-bottom: 5vh;
+    }
+
+    .list-unstyled {
+        /* min-width: 40vw; */
+        width: 60vw;
+        margin: 0 20vw 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-unstyled li {
+        padding: 0;
+        margin: 0;
+    }
+    .list-unstyled hr{
+        opacity: 1;
+        width: 90vw;
+    }
+
+    .footer-portal {
+        width: auto;
+    }
+    .footer-copyright {
+        font-size: 10px;
+    }
+}
+@media (max-width:470px) {
+    .list-unstyled hr {
+        opacity: 1;
+    }
+    .list-unstyled{
+        width: 85vw;
+        margin-right: 0;
+    }
+
+}
