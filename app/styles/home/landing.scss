@@ -1,111 +1,81 @@
 .landing-div{
-    width:83vw;
+    max-width:1250px;
     margin:auto;
     background: #ECF2FF;
     border-radius: 24px;
-    height: 50vh;
+    height: 400px;
     padding: 3rem 2rem;
 }
 .cp1{
-    background-image: url(../../../assets/home/cp1.svg);
-      /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 107.78px;
     width:127px;
     position: relative;
-    bottom: -1vh;
-    left: 1vw;
+    bottom: -5%;
+    left: 1%;
     
 }
 .cp2{
-    background-image: url(../../../assets/home/cp2.svg);
-      /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 73px;
     width:139px;
     position: relative;
-    bottom: -3vh;
-    left: 10vw;
+    bottom: -7%;
+    left: 13%;
 }
 .cp3{
-    background-image: url(../../../assets/home/cp3.svg);
-      /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 42px;
     width:42px;
     position: relative;
-    bottom: -4vh;
-    left: 2vw;
+    bottom: -7%;
+    left: 4%;
 }
 .cp4{
-    background-image: url(../../../assets/home/cp4.svg);
-     /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 24px;
     width:71px;
     position: relative;
-    bottom: 23vh;
-    left: 15vw;
+    bottom: 55%;
+    left: 19%;
 }
 .cp5{
-    background-image: url(../../../assets/home/cp5.svg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 20px;
     width:20px;
     position: relative;
-    bottom: 32vh;
-    left: 23vw;
+    bottom: 82%;
+    left: 26%;
 }
 .cp6{
-    background-image: url(../../../assets/home/cp6.svg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 18px;
     width:18px; 
     position: relative;
-    left:71vw;
-    bottom: 5vh;
+    left:90%;
+    bottom: 15%;
 }
 .cp7{
-    background-image: url(../../../assets/home/cp7.svg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 77px;
     width:109px;
     position: relative;
-    left: 62vw;
-    bottom: 12vh;
+    left: 77%;
+    bottom: 33%;
 }
 .cp8{
-    background-image: url(../../../assets/home/cp8.svg);
-   /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 33px;
     width:44px;
     position:relative;
-    bottom: 43vh;
-    left: 59vw;
+    bottom: 107%;
+    left: 76%;
 }
 .cp9{
-    background-image: url(../../../assets/home/cp9.svg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 111px;
     width:177px;
     position:relative;
-    left: 65vw;
-    bottom: 47vh;
+    left: 83%;
+    bottom: 117%;
 }
 .cp10{
-    background-image: url(../../../assets/home/cp10.svg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
     height: 22px;
     width:71px;
     position:relative;
-    left: 71vw;
-    bottom: 67vh;
+    left: 91%;
+    bottom: 170%;
 }
 .landing-box{
     width: 42%;
@@ -113,7 +83,7 @@
     height: fit-content;
     /* padding: 3rem 2rem; */
     position: relative;
-    bottom: 67vh;
+    bottom: 167%;
     h1{
         font-size: 39px;
         font-weight: 700;
@@ -123,11 +93,10 @@
         margin: 0 6%;
     }
     .div{
-        margin-top: 10px;
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: center;
         color: #6c6d70;
         margin: 10px 3%;
@@ -136,29 +105,369 @@
         margin-top: 10px;
         display: flex;
         background-color: white;
-        padding: 5px;
-        padding-left: 20px;
+        padding: 5px 5px 5px 20px;
         border-radius: 20px;
-        box-shadow: 0px 0px 2px aliceblue;
-        .search{
+        height: 50px;
+        box-shadow: 0 0 5px 0 rgba( 31, 38, 135, 0.17 );
+        .search {
             outline: none;
             font-size: 12px;
             font-weight: 500;
             color: black;
         }
     }
-    .landing-filter{
+    .landing-filter {
         margin-top: 10px;
-        background-color: white;
-        padding: 10px 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-left: 15px;
-        border-radius: 20px;
         font-size: 12px;
-        font-weight: 500;
-        color: black;
         width: 100%;
+        cursor: pointer;
+
+        .filter-box {
+            background-color: white;
+            padding: 10px 25px;
+            display: flex;
+            font-weight: 500;
+            //width: 100%;
+            width: 200px;
+            color: #6c6d70;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            height: 50px;
+            box-shadow: 0 0 5px 0 rgba(31, 38, 135, 0.17);
+        }
+
+        .filter-options {
+            background-color: white;
+            padding: 15px 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 0 rgba(31, 38, 135, 0.17);
+            margin-top: 10px;
+            width:300px;
+            display: none;
+            li{
+                padding: 15px;
+                padding-right: 25px;
+                margin: 10px;
+                border-radius: 10px;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
+                transition-duration: .3s;
+                &:hover{
+                    background-color: rgb(31, 38, 235, 0.08) ;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
+.hover-arrow{
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+.landing-filter:hover .hover-arrow{
+    transform: rotate(0deg);
+}
+.filter-box:hover{
+    border: 1px solid #5178FF;
+}
+.landing-search:focus-within{
+    border: 1px solid #5178FF;
+}
+.landing-filter:hover .filter-options{
+    display: block;
+}
+
+@media (max-width: 1250px) {
+    .landing-div{
+        margin: 0 2vw;
+        height: 350px;
+    }
+    .cp1{
+        height: 77px;
+        left:-1%;
+    }
+    .cp2{
+        width: 90px;
+        left:10%;
+    }
+    .cp3{
+        left:3%;
+    }
+    .cp4{
+        left:17%;
+        bottom: 50%;
+        width:50px;
+    }
+    .cp5{
+        left:23%;
+    }
+    .cp10{
+        bottom:190%;
+    }
+    .cp9{
+        width:120px;
+        left:85%;
+        bottom:130%;
+    }
+    .cp7{
+        width:90px;
+    }
+    .landing-box{
+        bottom: 190%;
+        width:50%;
+        h1{
+            font-size: 30px;
+            line-height: 40px;
+            margin:0 8%;
+        }
+        .landing-search{
+            .search {
+                width: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .landing-search{
+    .search{
+        width: 100px;
+    }}
+    .landing-box{
+    .landing-filter{
+    .filter-box{
+        width: 150px;
+    }}}
+}
+@media (max-width: 1000px) {
+    .landing-div{
+        height: 480px;
+    }
+    .cp7{
+        bottom:70%;
+        left:5%;
+    }
+    .cp8{
+        bottom:50%;
+        left:2%;
+    }
+    .cp1{
+        top:80%;
+        left:5%;
+    }
+    .cp3{
+        left:0;
+        top:20%;
+    }
+    .cp2{
+        top:65%;
+        left:80%;
+    }
+    .cp9{
+        bottom:90%;
+    }
+    .cp4{
+        left:95%;
+    }
+    .cp6{
+        left:85%;
+        bottom:65%;
+    }
+    .cp5{
+        left:95%;
+        top:20%;
+    }
+    .cp10{
+        left:90%;
+        bottom:25%;
+    }
+    .landing-box{
+        bottom:110%;
+        width: 60%;
+        .landing-search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        .search {
+            width: 150px;
+        }}
+    }
+    .landing-box{
+        .landing-filter{
+            .filter-box{
+                width: 200px;
+            }}}
+}
+@media (max-width: 900px) {
+    .landing-box{
+    .landing-search{
+        .search{
+            width: 100px;
+        }}}
+}
+@media (max-width: 750px) {
+    .cp7{
+        bottom:70%;
+        left:1%;
+        width: 70px;
+    }
+    .cp8{
+        bottom:65%;
+        left:1%;
+    }
+    .cp1{
+        top:85%;
+        left:15%;
+        width: 70px;
+    }
+    .cp3{
+        left:-1%;
+        width: 40px;
+        top:45%;
+    }
+    .cp2{
+        top:65%;
+        left:70%;
+    }
+    .cp9{
+        bottom:90%;
+        left:82%;
+        width: 70px;
+    }
+    .cp4{
+        left:95%;
+        width: 30px;
+    }
+    .cp6{
+        left:85%;
+        bottom:65%;
+    }
+    .cp5{
+        left:95%;
+        top:30%;
+    }
+    .cp10{
+        left:85%;
+        bottom:22%;
+    }
+
+    .landing-feild{
+        flex-direction: column;
+    }
+    .landing-box{
+        bottom: 127%;
+        width:90%;
+        h1{
+            margin: 0 20%;
+            font-size: 22px;
+            line-height: 25px;
+        }
+        .div{
+            margin: 10px 20%;
+            text-align: justify;
+        }
+        .landing-filter{
+            margin-left: 0;
+            .filter-box{
+                width: 100%;
+                height: 40px;
+            }
+            .filter-options{
+                width: inherit;
+            }
+        }
+        .landing-search{
+            height: 40px;
+            .search{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .landing-div{
+        height: 580px;
+    }
+    .cp7{
+        bottom:55%;
+        left:-2%;
+        width: 50px;
+    }
+    .cp8{
+        bottom:65%;
+        left:15%;
+        width: 30px;
+    }
+    .cp1{
+        top:95%;
+        left:15%;
+        width: 50px;
+    }
+    .cp3{
+        left:-1%;
+        width: 40px;
+        top:60%;
+    }
+    .cp2{
+        top:75%;
+        left:70%;
+    }
+    .cp9{
+        bottom:85%;
+        left:82%;
+        width: 70px;
+    }
+    .cp4{
+        left:95%;
+        bottom: 48%;
+        width: 30px;
+    }
+    .cp6{
+        left:15%;
+        bottom:55%;
+    }
+    .cp5{
+        left:101%;
+        top:0;
+    }
+    .cp10{
+        left:85%;
+        bottom:-5%;
+        width: 30px;
+    }
+
+    .landing-feild{
+        flex-direction: column;
+    }
+    .landing-box{
+        bottom: 80%;
+        width:100%;
+        h1{
+            margin: 0;
+            font-size: 22px;
+            line-height: 25px;
+        }
+        .div{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .landing-filter{
+            margin-left: 0;
+            .filter-box{
+                width: 100%;
+                height: 40px;
+            }
+            .filter-options{
+                width: inherit;
+            }
+        }
+        .landing-search{
+            height: 40px;
+            .search{
+                width: 100%;
+            }
+        }
     }
 }

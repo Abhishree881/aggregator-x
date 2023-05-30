@@ -49,6 +49,7 @@ function Navbar() {
                     sx={{ marginBottom: "-0.05em" }}
                   />
                 </span>
+
               </a>
               <a
                 href="#"
@@ -70,11 +71,11 @@ function Navbar() {
             >
               Cart({cartCount})
             </a>
-              <span className='three-bar' onClick={() => setShowMobileMenu(true)}>{!showMobileMenu && <MenuIcon fontSize="large" />}</span>
-              <span className='three-bar' onClick={() => setShowMobileMenu(false)}>{showMobileMenu && <CloseIcon fontSize="large" />}</span>
+
                 </>
             )}
           </div>
+
           {width>breakpoint? (
           <div className="flex flex-row gap-4">
             <Button text={"Post a free product"} type={"secondary"} icon={0} />
@@ -84,7 +85,53 @@ function Navbar() {
               icon={1}
             />
           </div>
-          ):""}
+          ):
+          <>
+            <span className='three-bar open' onClick={() => setShowMobileMenu(true)}>{!showMobileMenu && <MenuIcon fontSize="large" />}</span>
+            <span className='three-bar close' onClick={() => setShowMobileMenu(false)}>{showMobileMenu && <CloseIcon fontSize="large" />}</span>
+            {showMobileMenu? (<div className="mobile-nav">
+              <a
+                  href="/"
+                  className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item"
+              >
+                Home
+              </a>
+
+              <a
+                  href="#"
+                  className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item"
+              >
+                Products
+              </a>
+              <a
+                  href="#"
+                  className="text-black px-3 py-2 rounded-md text-smm font-medium flex flex-row menu-item items-start pages"
+              >
+                Pages
+                <span className="hover-arrow">
+                  <KeyboardArrowUpOutlinedIcon
+                      sx={{ marginBottom: "-0.05em" }}
+                  />
+                </span>
+
+              </a>
+              <a
+                  href="#"
+                  className="text-black px-3 py-2 rounded-md text-smm font-medium menu-item"
+              >
+                Contacts
+              </a>
+              <div style={{margin:"10px 0",display:"flex",flexDirection:"column",gap:"10px",width:"250px"}}>
+                <Button text={"Post a free product"} type={"secondary"} icon={0} />
+                <Button
+                    text={"Post a featured product"}
+                    type={"primary"}
+                    icon={1}
+                />
+              </div>
+            </div>):''}
+          </>
+          }
         </div>
       </div>
     </nav>

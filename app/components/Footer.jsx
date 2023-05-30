@@ -46,7 +46,7 @@ function Footer() {
 
                     </section>
                     {/* <!-- Section: Links --> */}
-                    <section className="">
+                    <section className="first-row" style={{display:"flex"}}>
 
                             {/* <!--Grid row--> */}
                             <div className="footer-row">
@@ -56,7 +56,7 @@ function Footer() {
                                         <h1 style={{color:"black",padding:"2px", fontSize:"20px", fontWeight:"600", marginBottom:"10px"}}>Main pages</h1>
 
                                         <li>
-                                            <a href="" target="blank" className="text-white-footer">
+                                                   <a href="" target="blank" className="text-white-footer">
                                                 Home
                                             </a>
                                         </li>
@@ -105,9 +105,97 @@ function Footer() {
                                     </ul>
                                 </div>
                             </div>
+                        <div className="footer-row">
+                            {/* <!--Grid column--> */}
+                            <div className="">
+                                <ul className="list-unstyled ">
+                                    <h1 style={{color:"black",padding:"2px", fontSize:"20px", fontWeight:"600", marginBottom:"40px"}}></h1>
+                                    <li>
+                                        <a href="" target="blank" className="text-white-footer">
+                                            Creators Single
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Moderators
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Moderator Single
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Companies
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Company Single
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Post a free product
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Blog
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Blog Category
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="footer-row">
+                            {/* <!--Grid column--> */}
+                            <div className="">
+                                <ul className="list-unstyled ">
+                                    <h1 style={{color:"black",padding:"2px", fontSize:"20px", fontWeight:"600", marginBottom:"40px"}}> </h1>
+
+                                    <li>
+                                        <a href="/pages/blog-post" target="blank" className="text-white-footer">
+                                            Blog Post
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Contact
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Credits
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" className="text-white-footer" target="blank">
+                                            Credit Single
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                             {/* <!--Grid row--> */}
                     </section>
-                    <section className="">
+                    <section className="second-row">
 
                             {/* <!--Grid row--> */}
                             <div className="footer-row">
@@ -157,32 +245,32 @@ function Footer() {
 
 
                     </section>
-                    <section className="">
+                    <section className="third-row">
                         <div className="footer-row">
                             <div className="">
                                 <ul className="list-unstyled ">
                                     <h1 className="list-head" style={{color:"black",padding:"2px", fontSize:"20px", fontWeight:"600", marginBottom:"10px"}}>Categories</h1>
                                     <li>
                                         <a href="" target="blank" className="text-white-footer">
-                                            Home
+                                            Business
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="/pages/home-sales" className="text-white-footer" target="blank">
-                                            Home Sales
+                                            Design
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="/pages/about" className="text-white-footer" target="blank">
-                                            About
+                                            Development
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="" className="text-white-footer" target="blank">
-                                            Products
+                                            Marketing
                                         </a>
                                     </li>
 
@@ -191,6 +279,10 @@ function Footer() {
                             </div>
                         </div>
                     </section>
+
+                </div>
+                <div className="footer-copyright">
+                    <p>Copyright © Aggregator X</p>
                 </div>
             </footer>
         </div>

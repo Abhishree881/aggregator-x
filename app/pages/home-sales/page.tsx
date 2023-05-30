@@ -14,7 +14,7 @@ export default function HomePage() {
     let url3 = 'https://i.ibb.co/wpccQg1/figma.png'
 
     useEffect(() => {
-        document.title = 'Home-Sales - Aggregator X';
+        document.title = 'Home(Sales) - Aggregator X';
     }, []);
 
     return (
