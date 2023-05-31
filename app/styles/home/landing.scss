@@ -145,6 +145,7 @@
             box-shadow: 0 0 5px 0 rgba(31, 38, 135, 0.17);
             margin-top: 10px;
             width:300px;
+            z-index: 100;
             display: none;
             li{
                 padding: 15px;
@@ -156,7 +157,7 @@
                 justify-content: space-between;
                 transition-duration: .3s;
                 &:hover{
-                    background-color: rgb(31, 38, 235, 0.08) ;
+                    background-color: #ECF2FF;
                     padding-right: 15px;
                 }
             }
@@ -178,6 +179,8 @@
 }
 .landing-filter:hover .filter-options{
     display: block;
+    z-index: 100;
+
 }
 
 @media (max-width: 1250px) {
